@@ -3,88 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>倉鼠愛好者網站</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #50b3a2;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #50b3a2;
-            padding: 10px 0;
-        }
-
-        nav img {
-            max-height: 50px;
-            margin: 0 5px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            margin-left: 20px;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin: 20px 0;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>倉鼠愛好者平台</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>倉鼠愛好者網站</h1>
+        <h1>倉鼠愛好者平台</h1>
         <nav>
-            <img src="images/hamster1.jpg" alt="倉鼠1">
-            <img src="images/hamster2.jpg" alt="倉鼠2">
-            <img src="images/hamster3.jpg" alt="倉鼠3">
-            <img src="images/hamster4.jpg" alt="倉鼠4">
             <ul>
                 <li><a href="#home">首頁</a></li>
                 <li><a href="#about">關於倉鼠</a></li>
@@ -94,30 +19,70 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="home">
-            <h2>歡迎來到倉鼠愛好者網站</h2>
-            <p>提供全面的倉鼠飼養指南、健康護理知識和最新的倉鼠資訊，並建立一個倉鼠愛好者的社區。</p>
+            <h2>歡迎來到倉鼠愛好者平台</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="image1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image3.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <p>在這裡，你可以找到所有關於倉鼠的資訊，並與其他倉鼠愛好者分享經驗和心得。</p>
         </section>
+
         <section id="about">
             <h2>關於倉鼠</h2>
-            <p>倉鼠是一種可愛的小型寵物，適合家庭飼養。這裡提供倉鼠的基本信息和有趣的事實。</p>
+            <p>倉鼠是一種受歡迎的小型寵物，以其可愛的外觀和有趣的行為而聞名。這裡提供倉鼠的基本介紹和品種分類。</p>
         </section>
+
         <section id="guide">
             <h2>飼養指南</h2>
-            <p>如何為倉鼠提供最佳的飼養環境和照顧，包括籠子的選擇、食物和玩具等。</p>
+            <p>了解如何正確飼養倉鼠，包括籠子選擇、餵食、清潔和娛樂等方面的建議。</p>
         </section>
+
         <section id="health">
             <h2>健康護理</h2>
-            <p>保持倉鼠健康的建議和技巧，如何預防常見的倉鼠疾病和處理緊急情況。</p>
+            <p>保持倉鼠健康的關鍵是正確的護理和定期的健康檢查。這裡有關於倉鼠常見疾病的資訊和預防方法。</p>
         </section>
+
         <section id="articles">
             <h2>最新文章</h2>
-            <p>閱讀最新的倉鼠相關文章，了解最新的飼養技巧和健康建議。</p>
+            <p>瀏覽我們的最新文章，了解最新的倉鼠養護知識和趨勢。</p>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 倉鼠愛好者網站. 版權所有.</p>
+        <p>&copy; 2024 倉鼠愛好者平台. 版權所有.</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function plusSlides(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
 </body>
 </html>
