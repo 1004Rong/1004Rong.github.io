@@ -1,49 +1,113 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>倉鼠之家</title>
     <style>
-        /* 在這裡加入你的 CSS 代碼，用來美化網站風格 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .tagline {
+            margin-top: 10px;
+            background: linear-gradient(to bottom right, #ff8c00, #ffd700);
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            margin-top: 20px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>歡迎來到倉鼠之家</h1>
-        <!-- 在這裡添加導航菜單 -->
+        <div class="header-container">
+            <h1>倉鼠之家</h1>
+            <div class="tagline">陳莉蓉</div>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="slide1.jpg" alt="倉鼠圖片1">
+                </div>
+                <div class="slide fade">
+                    <img src="slide2.jpg" alt="倉鼠圖片2">
+                </div>
+                <!-- 更多圖片 -->
+            </div>
+        </div>
     </header>
-    
+    <nav>
+        <ul>
+            <li><a href="#about">關於倉鼠</a></li>
+            <li><a href="#care">飼養指南</a></li>
+            <li><a href="#health">健康護理</a></li>
+            <li><a href="#articles">最新文章</a></li>
+        </ul>
+    </nav>
     <main>
-        <section id="about">
-            <h2>關於倉鼠</h2>
-            <!-- 在這裡添加關於倉鼠的內容 -->
-        </section>
-        
-        <section id="care-guide">
-            <h2>飼養指南</h2>
-            <!-- 在這裡添加飼養指南的內容 -->
-        </section>
-        
-        <section id="supplies">
-            <h2>倉鼠用品</h2>
-            <!-- 在這裡添加倉鼠用品的內容 -->
-        </section>
-        
-        <section id="media">
-            <h2>影片和圖片庫</h2>
-            <!-- 在這裡添加影片和圖片庫的內容 -->
-        </section>
-        
-        <section id="faq">
-            <h2>常見問題</h2>
-            <!-- 在這裡添加常見問題的內容 -->
-        </section>
+        <!-- 主要內容 -->
     </main>
-    
     <footer>
-        <p>聯絡我們：example@example.com</p>
-        <!-- 在這裡添加社群連結 -->
+        <!-- 底部內容 -->
     </footer>
+    <script>
+        // 可能需要 JavaScript 來處理幻燈片的輪播，或其他互動功能
+    </script>
 </body>
 </html>
