@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倉鼠生活趣</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "DFKai-SB", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #e9dfb7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            background-color: #e5a4a4;
+            margin: 0;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: rgb(91, 130, 229);
+        }
+
+        .hamster-section {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .hamster-section img {
+            width: 250px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .hamster-details {
+            flex: 1;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .text {
+            margin-bottom: 5px;
+        }
+
+        .text1 {
+            margin-bottom: 5px;
+            color:rgb(217, 56, 56)
+        }
+
+        .carousel-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel img {
+            width: 300px;
+            height: auto;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .button {
+            background-color: #c7edd9;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="商標圖" class="logo-img">
+            <div class="logo">倉鼠生活趣</div>
+        </div>
+        <div class="header-right">
+            <img src="images/ss.png" alt="放大鏡圖" class="search-icon">
+            <input type="text" placeholder="Search…">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於倉鼠</a></li>
+            <li><a href="guide.html">飼養指南</a></li>
+            <li><a href="health.html">健康護理</a></li>
+            <li><a href="articles.html">最新文章</a></li>
+        </ul>
+    </nav>
+    <div class="title">鼠的夏季照護</div>
+    <div class="section">
+        <div class="text">鼠的散熱能力不佳，一旦氣溫超過30度，中暑危險性高！為鼠做好抗暑保健重要哦！</div>
+    </div>
+
+    <div class="section">
+        <div class="subtitle">一、請讓鼠籠環境保持在28度以下，濕度保持75%以下。</div>
+        <div class="text">鼠避暑方法：</div>
+        <div class="text">1.降溫。方法：1.使用結冰寶特瓶、冰寶等置於籠外。</div>
+        <div class="text">2.開啟空調。 2.提供飲水。 </div>
+        <div class="text">3.鼠籠放在陰涼處，太陽不可照射。 </div>
+        <div class="text">4.空氣流通，如：電風扇（不直接對吹）。 </div>
+        <div class="text">5.加速散熱，如：放置大理石、鋁板、陶瓷、玻璃等材質墊供鼠散熱。</div>
+        <div class="text1">請注意：大理石、涼墊、電風扇，這些裝置可以降低中暑風險，但氣溫超過30度時，鼠有喪命風險，請確實降溫。</div>
+        <div class="text">＊鼠不耐高溫，不通風、濕度高、太陽直射，將增加中暑機率，<strong>中暑嚴重者可能導致短時間內喪命</strong>。</div>
+    </div>
+
+    <div class="section">
+        <div class="subtitle">二、不隨意帶鼠外出；外出時確實做好降溫防暑準備。</div>
+        <div class="text">1. 在外出籠旁邊放些冰水寶特瓶（外出籠加結冰水放進大袋子一起提）。</div>
+        <div class="text">2. 避免陽光照射外出籠。</div>
+        <div class="text highlight">請注意：每年夏天都有寵物鼠因飼主帶出門而熱死，夏季高溫請謹慎帶鼠外出。</div>
+    </div>
+
+    <div class="section">
+        <div class="subtitle">三、滾球內容易中暑</div>
+        <div class="text">室溫超過28度時，防勿讓鼠用滾球超過5分鐘。</div>
+    </div>
+
+    <div class="section">
+        <div class="subtitle">四、中暑症狀</div>
+        <div class="text">鼠的嘴巴、下巴、脖子、腹部被口水整片沾濕。，鼠身體摸起來燙燙的、精神食慾減退，甚至癱軟無力。</div>
+    </div>
+
+    <div class="section">
+        <div class="subtitle">鼠中暑時</div>
+        <div class="text">請立刻降溫、餵鼠喝水，<strong>並且送醫。</strong></div>
+        <div class="text">如果鼠中暑倒地虛弱的急救方法：</div>
+        <div class="text">酒精加水比例1：1，沾濕鼠的耳背、尾巴、頸部、腹部，<strong>並且送醫！</strong></div>
+        <div class="text1">＊請注意：鼠中暑之後又活蹦亂跳仍請就醫檢查。臟器熱衰竭不會立刻被發現，等到鼠精神食欲又下降才就醫，可能回天乏術</div>
+    </div>
+
+    <a href="articles.html" class="button">回最新文章</a>
+    <footer>
+        <p>版權所有@LiRong倉鼠</p>
+    </footer>
+</body>
+
+</html>

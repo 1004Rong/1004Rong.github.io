@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倉鼠生活趣</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "DFKai-SB", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #e9dfb7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            background-color: #e5a4a4;
+            margin: 0;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: rgb(91, 130, 229);
+        }
+
+        .hamster-section {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .hamster-section img {
+            width: 250px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .hamster-details {
+            flex: 1;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .text {
+            margin-bottom: 5px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel img {
+            width: 300px;
+            height: auto;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .button {
+            background-color: #c7edd9;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="商標圖" class="logo-img">
+            <div class="logo">倉鼠生活趣</div>
+        </div>
+        <div class="header-right">
+            <img src="images/ss.png" alt="放大鏡圖" class="search-icon">
+            <input type="text" placeholder="Search…">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於倉鼠</a></li>
+            <li><a href="guide.html">飼養指南</a></li>
+            <li><a href="health.html">健康護理</a></li>
+            <li><a href="articles.html">最新文章</a></li>
+        </ul>
+    </nav>
+    <div class="title">「倉鼠一籠一鼠」宣導策略說明</div>
+    <div class="section">
+        <div class="text">為什麼宣導倉鼠一籠一鼠？</div>
+    </div>
+
+    <div class="section">
+        <div class="subtitle">超高比例待救援受難鼠，起因皆為合籠飼養</div>
+        <div class="text">鼠繁殖力強大，短時間內可使飼主完全無力負擔，最後只能棄養。</div>
+        <div class="text">從合籠到棄養〈或是接受救援〉的過程中，
+            鼠承受極大生理、心理痛苦，傳染病、焦慮症、營養不良、身體創傷等。</div>
+        <div class="text">在救援案中，高比例肢體殘障、身體傷害都是鼠相殘，國內外無數資料建議倉鼠單獨飼養最為安全。</div>
+        <div class="text">倉鼠合籠飼養時，即使是具有豐富經驗的飼主，也常因一時失誤而造成倉鼠受傷。</div>
+        <div class="text">除此之外，救援案中也顯示，倉鼠在合籠飼養環境中，時常出現如自殘、腸炎等由心理影響生理之高度壓力症狀。</div>
+        <div class="text">考量倉鼠合籠飼養「安全門檻過於嚴苛」、「風險過高」、「災情過於慘重」、「複雜的合籠知識、條件難以落實」、「鼠寶福利」，愛鼠協會致力達成普及「一籠一鼠」觀念之共識。</div>
+    </div>
+
+    <div class="section">
+        <div class="subtitle">有些倉鼠與同類可以和平相處，為什麼還要說一籠一鼠？</div>
+        <div class="text">打個比方，毒品雖然對社會、人類造成很大的傷害，大家有目共睹。但是大家也都知道，某些毒品在醫院裡會被使用，像是海洛因、嗎啡。</div>
+        <div class="text">所謂的「毒品」也可能是醫療用品。</div>
+        <div class="text">政府、媒體會因為這樣而跟民眾說「有些毒品是可以拿來用的」嗎？顯然不會。任何的毒品，包含醫院所使用的那些，都是受到嚴格管制。</div>
+        <div class="text">我們並不是說倉鼠合籠是罪惡，但我們都同意合籠若造成傷害是過錯，這是我們愛鼠人應該努力改善的目標。</div>
+        <div class="text">鼠寶靠我們來救，因此而擬定一個最適合推行的原則。</div>
+    </div>
+
+    <a href="articles.html" class="button">回最新文章</a>
+    <footer>
+        <p>版權所有@LiRong倉鼠</p>
+    </footer>
+</body>
+
+</html>

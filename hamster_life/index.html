@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倉鼠生活趣</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        font-family: '標楷體', serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #e9dfb7;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-left,
+    .header-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-img {
+        width: 60px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .search-icon {
+        width: 30px;
+        height: auto;
+        margin-right: 5px;
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    input[type="text"] {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        background-color: #e5a4a4;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #575757;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .carousel {
+        position: relative;
+        max-width: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        justify-content: center;
+    }
+    
+    .carousel-img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: none;
+    }
+    
+    .carousel-img.active {
+        display: block;
+    }
+    
+    .carousel-prev, .carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .carousel-prev {
+        left: 10px;
+    }
+    
+    .carousel-next {
+        right: 10px;
+    }
+    
+    .forum {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    .forum textarea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+    .comments p {
+        background-color: #e9e9e9;
+        padding: 10px;
+        border-radius: 3px;
+        margin-bottom: 5px;
+    }
+    
+    .articles {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .articles article {
+        margin-bottom: 20px;
+    }
+    
+    .articles h3 {
+        margin-top: 0;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .forum-header {
+        margin-bottom: 20px; /* 調整與下方內容的間距 */
+    }
+    
+    h2{
+        text-align: center;
+        margin-bottom: 20px; /* 調整與下方內容的間距 */
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="商標圖" class="logo-img">
+            <div class="logo">倉鼠生活趣</div>
+        </div>
+        <div class="header-right">
+            <img src="images/ss.png" alt="放大鏡圖" class="search-icon">
+            <input type="text" placeholder="Search…">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於倉鼠</a></li>
+            <li><a href="guide.html">飼養指南</a></li>
+            <li><a href="health.html">健康護理</a></li>
+            <li><a href="articles.html">最新文章</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <img src="images/r1.jpg" alt="圖片1" class="carousel-img">
+                <img src="images/r2.jpg" alt="圖片2" class="carousel-img">
+                <img src="images/r3.jpg" alt="圖片3" class="carousel-img">
+            </div>
+        </section>
+        <h2>鼠鼠論壇</h2>
+        <section class="forum">
+            <div class="forum-header">
+                <span id="comment-count">3</span> 則留言
+            </div>
+            <form id="comment-form">
+                <textarea id="comment-input" placeholder="請輸入留言..."></textarea>
+                <button type="submit">發表留言</button>
+            </form>
+            <div class="comments">
+                <p>倉鼠真的好可愛</p>
+                <p>我家鼠鼠是哈姆太郎</p>
+                <p>這網站太棒了</p>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <p>版權所有@LiRong倉鼠</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentsContainer = document.querySelector('.comments');
+            const commentCountContainer = document.getElementById('comment-count');
+
+            // 計算並顯示現有留言數
+            const initialCommentCount = commentsContainer.querySelectorAll('p').length;
+            commentCountContainer.textContent = initialCommentCount;
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const commentText = commentInput.value;
+
+                if (commentText.trim() !== '') {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.classList.add('comment');
+                    commentDiv.innerHTML = `<p>${commentText}</p>`;
+                    commentsContainer.prepend(commentDiv);
+
+                    commentInput.value = ''; // 清空輸入框
+                    // 更新留言計數
+                    commentCountContainer.textContent = parseInt(commentCountContainer.textContent) + 1;
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
