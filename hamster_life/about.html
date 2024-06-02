@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倉鼠生活趣</title>
+    <style>
+        body {
+            font-family: "DFKai-SB", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #e9dfb7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            background-color: #e5a4a4;
+            margin: 0;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hamster-section {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .hamster-section img {
+            width: 250px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .hamster-details {
+            flex: 1;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .text {
+            margin-bottom: 5px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel img {
+            width: 300px;
+            height: auto;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="商標圖" class="logo-img">
+            <div class="logo">倉鼠生活趣</div>
+        </div>
+        <div class="header-right">
+            <img src="images/ss.png" alt="放大鏡圖" class="search-icon">
+            <input type="text" placeholder="Search…">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於倉鼠</a></li>
+            <li><a href="guide.html">飼養指南</a></li>
+            <li><a href="health.html">健康護理</a></li>
+            <li><a href="articles.html">最新文章</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <div class="title">倉鼠簡介</div>
+            <div class="text">倉鼠是小型哺乳動物，屬於嚙齒目，與家鼠和田鼠同屬。牠們通常被當作可愛的寵物飼養，因其活潑好動的個性而受到人們的喜愛。</div>
+        </div>
+        <section class="carousel-container">
+            <div class="carousel">
+                <img src="images/r4.jpg" alt="圖片4" class="active">
+                <img src="images/r5.jpg" alt="圖片5">
+                <img src="images/r6.jpg" alt="圖片6">
+            </div>
+        </section>
+        <div class="title">種類與生活習性</div>
+
+        <div class="hamster-section">
+            <img src="images/p1.jpg" alt="叙利亞倉鼠">
+            <div class="hamster-details">
+                <div class="subtitle">叙利亞倉鼠</div>
+                <div class="text"><strong>俗稱</strong>：黃金鼠、熊鼠</div>
+                <div class="text"><strong>身長</strong>：12.5-18公分</div>
+                <div class="text"><strong>壽命</strong>：2-3年</div>
+                <div class="text"><strong>原產地</strong>：敘利亞</div>
+                <div class="text">
+                    <strong>習性</strong>：性格獨立，領域性很強，為獨居動物，不應將兩隻以上黃金鼠養在同一個籠子裡。黃金鼠是所有倉鼠中最容易親近人類，但也是最兇狠，需要大空間的鼠種。
+                </div>
+            </div>
+        </div>
+
+        <div class="hamster-section">
+            <img src="images/p2.jpg" alt="加卡利亞倉鼠">
+            <div class="hamster-details">
+                <div class="subtitle">加卡利亞倉鼠</div>
+                <div class="text"><strong>俗稱</strong>：三線鼠、冬白、銀斑鼠、鈍緬鼠、布丁鼠（黃色）、...</div>
+                <div class="text"><strong>身長</strong>：7.6-10公分</div>
+                <div class="text"><strong>壽命</strong>：1.5-2.5年</div>
+                <div class="text"><strong>原產地</strong>：哈薩克斯坦和中國北部</div>
+                <div class="text"><strong>習性</strong>：經過馴養可能變得十分親人，毛色會隨季節變換而轉變。他們不太喜歡其他鼠，不應將相互不認識的三線鼠放在一起。</div>
+            </div>
+        </div>
+
+        <div class="hamster-section">
+            <img src="images/p3.jpg" alt="坎貝爾侏儒倉鼠">
+            <div class="hamster-details">
+                <div class="subtitle">坎貝爾侏儒倉鼠</div>
+                <div class="text"><strong>俗稱</strong>：一線鼠</div>
+                <div class="text"><strong>身長</strong>：7.6-11公分</div>
+                <div class="text"><strong>壽命</strong>：1.5-3年</div>
+                <div class="text"><strong>原產地</strong>：蒙古和中國北亞草原</div>
+                <div class="text"><strong>習性</strong>：一線鼠跟三線鼠外型相近，體形略大一些，毛色非常豐富，耳朵較大、較尖。個性較兇，比起三線鼠更不親人。</div>
+            </div>
+        </div>
+
+        <div class="hamster-section">
+            <img src="images/p4.jpg" alt="羅伯羅夫斯基倉鼠">
+            <div class="hamster-details">
+                <div class="subtitle">羅伯羅夫斯基倉鼠</div>
+                <div class="text"><strong>俗稱</strong>：老公公鼠、小毛足鼠、小露寶</div>
+                <div class="text"><strong>身長</strong>：3.8~5公分</div>
+                <div class="text"><strong>壽命</strong>：3~3.5年</div>
+                <div class="text"><strong>原產地</strong>：戈壁沙漠、哈薩克斯坦、俄羅斯</div>
+                <div class="text"><strong>習性</strong>：體型很小、移動速度很快，很容易受到驚嚇，需要安靜環境，是最不喜歡親近人類的寵物倉鼠。老公公鼠可以接受與有血緣關係的同伴共同生活。
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>版權所有@LiRong倉鼠</p>
+    </footer>
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
+
+        function showNextImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000);
+    </script>
+</body>
+
+</html>
