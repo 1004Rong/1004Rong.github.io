@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倉鼠生活趣</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "DFKai-SB", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #e9dfb7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            background-color: #e5a4a4;
+            margin: 0;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hamster-section {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .hamster-section img {
+            width: 250px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .hamster-details {
+            flex: 1;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .text {
+            margin-bottom: 5px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel img {
+            width: 300px;
+            height: auto;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .button {
+            background-color: #c7edd9;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="商標圖" class="logo-img">
+            <div class="logo">倉鼠生活趣</div>
+        </div>
+        <div class="header-right">
+            <img src="images/ss.png" alt="放大鏡圖" class="search-icon">
+            <input type="text" placeholder="Search…">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於倉鼠</a></li>
+            <li><a href="guide.html">飼養指南</a></li>
+            <li><a href="health.html">健康護理</a></li>
+            <li><a href="articles.html">最新文章</a></li>
+        </ul>
+    </nav>
+    <h2>鼠鼠的最新文章</h2>
+    <div class="hamster-section">
+        <img src="images/p5.jpg" alt="夏日消暑對策">
+        <div class="hamster-details">
+            <div class="subtitle">夏日消暑對策</div>
+            <div class="text">
+                倉鼠沒有汗腺，而且散熱能力差，一旦氣溫超過28度，即有中暑喪命危險，所以為鼠鼠做好抗暑對策很重要哦！
+            </div>
+            <a href="summer.html" class="button">一起消暑去</a>
+        </div>
+    </div>
+    <div class="hamster-section">
+        <img src="images/p6.jpg" alt="為什麼要一籠一鼠">
+        <div class="hamster-details">
+            <div class="subtitle">為什麼要一籠一鼠</div>
+            <div class="text">
+                超高比例待救援倉鼠，起因皆為合籠飼養。為什麼堅導一籠一鼠？
+                <p>鼠繁殖力強大，短時間內可能如此完全無力負擔，最終只能棄養。從合籠到棄養（或是接收救援）的過程中，鼠承受極大生理、心理痛苦、傳染病、焦慮症、窩養不良、身體創傷等。</p>
+            </div>
+            <a href="one.html" class="button">閱讀更多</a>
+        </div>
+    </div>
+    <footer>
+        <p>版權所有@LiRong倉鼠</p>
+    </footer>
+</body>
+
+</html>
